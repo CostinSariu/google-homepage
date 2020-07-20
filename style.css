@@ -1,0 +1,48 @@
+
+#navbar {
+display: grid;
+grid-template-columns: 1fr 70px 70px 70px 70px 20px;
+grid-template-rows: 70px;
+grid-template-areas: ". gmail images blocks sign-in";
+}
+/* navbar */
+#gmail{grid-area: gmail; justify-self: center; align-self: center; color: black; font-family: Helvetica;}
+#images{grid-area: images; justify-self: center; align-self: center; color: black; font-family: Helvetica;}
+#blocks{grid-area: blocks; justify-self: center; align-self: center;}
+#sign-in{grid-area: sign-in; justify-self: center; align-self: center;
+border: 2px solid blue; border-radius: 2px; padding: 5px 5px 5px 5px; background-color: rgb(95, 158, 252); color: white; font-family: Helvetica;;
+}
+/* main */
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 70px 60px 40px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". container ."
+    ". language .";
+}
+#logo{grid-area: logo; justify-self: center; align-self: flex-end;}
+#search-text{grid-area: search; justify-self: center; align-self: center; height: 40px; width: 500px; border-radius: 20px; border-color: lightgrey; border-style: solid;}
+#search-icon{grid-area: search; justify-self: start; align-self: center;  margin-left: 10px;}
+#google-search{grid-area: container; justify-self: center; align-self: center; margin-right: 200px; height: 40px; width: 150; border-radius: 5px; border-color: transparent; font-family: Helvetica;}
+#lucky{grid-area: container; justify-self: center; align-self: center;  margin-left: 200px; height: 40px; width: 150; border-radius: 5px; border-color: transparent; font-family: Helvetica;}
+#language-options{grid-area: language; justify-self: center; align-self: center; font-family: Helvetica;}
+#english{font-family: Helvetica; padding-right: 10px; padding-left: 10px;}
+#spanish{font-family: Helvetica;}
+
+#footer{
+    display: grid; background-color: lightgrey;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    height: 50px;
+    grid-template-areas: 
+    "ad business about how";
+}
+#advertising{grid-area: ad; justify-self: center; align-self: center; color: black; font-family: Helvetica;}
+#business{grid-area: business; justify-self: center; align-self: center; color: black; font-family: Helvetica;}
+#about{grid-area: about; justify-self: center; align-self: center; color: black; font-family: Helvetica;}
+#how-search-works{grid-area: how; justify-self: center; align-self: center; color: black; font-family: Helvetica;}
